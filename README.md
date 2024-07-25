@@ -1,2 +1,2 @@
-# web-dev
-Repository for Web Developement Projects.
+# portfolio
+Repository for Personal Website.
