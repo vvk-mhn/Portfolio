@@ -35,7 +35,7 @@ function setTheme() {
 }
 
 function setDarkMode() {
-  document.body.removeAttribute("theme", "dark");
+  document.body.setAttribute("theme", "dark");
   localStorage.setItem("theme", "dark");
 
   themeIcons.forEach((icon) => {
@@ -44,7 +44,7 @@ function setDarkMode() {
 }
 
 function setLightMode() {
-  document.body.setAttribute("theme");
+  document.body.removeAttribute("theme");
   localStorage.setItem("theme", "light");
 
   themeIcons.forEach((icon) => {
