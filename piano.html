@@ -4,25 +4,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Music Recordings</title>
+    <title>Synchronoise Recordings</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="mediaqueries.css" />
     <style>
         /* GENERAL */
 
-        :root {
-            --primary-color: black;
-            --primary-color-2: rgb(39, 39, 39);
-            --primary-color-3: rgb(74, 74, 74);
-            --background-color: rgb(33, 33, 33);
-            --secondary-color: white;
-            --secondary-color-2: rgb(170, 170, 170);
-            --button-background: rgb(202, 202, 202);
-            --button-text-hover: lightgrey;
-            --button-border: rgb(202, 202, 202) 0.1rem solid;
-            --button-border-2: rgb(0, 0, 0) 0.1rem solid;
-            --container-border: rgb(92, 92, 92);
-        }
+      /* Default Light Mode */
+      :root {
+        --primary-color: white;
+        --primary-color-2: rgb(250, 250, 250);
+        --primary-color-3: rgb(181, 181, 181);
+        --background-color: rgb(255, 255, 255);
+        --secondary-color: black;
+        --secondary-color-2: rgb(85, 85, 85);
+        --button-background: rgb(53, 53, 53);
+        --button-text-hover: grey;
+        --button-border: rgb(53, 53, 53) 0.1rem solid;
+        --button-border-2: rgb(255, 255, 255) 0.1rem solid;
+        --container-border: rgb(163, 163, 163);
+      }
+
+      /* Dark Mode */
+      [theme="dark"] {
+        --primary-color: black;
+        --primary-color-2: rgb(39, 39, 39);
+        --primary-color-3: rgb(74, 74, 74);
+        --background-color: rgb(33, 33, 33);
+        --secondary-color: white;
+        --secondary-color-2: rgb(170, 170, 170);
+        --button-background: rgb(202, 202, 202);
+        --button-text-hover: lightgrey;
+        --button-border: rgb(202, 202, 202) 0.1rem solid;
+        --button-border-2: rgb(0, 0, 0) 0.1rem solid;
+        --container-border: rgb(92, 92, 92);
+      }
 
         body {
             font-family: "Poppins", sans-serif;
@@ -294,6 +311,16 @@
                 <li><a href="#recordings">Recordings</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
+                <li>
+                  <img
+                    id="modeToggle2"
+                    class="icon color-icon"
+                    src="./assets/theme_light.png"
+                    src-light="./assets/theme_light.png"
+                    src-dark="./assets/theme_dark.png"
+                    alt="Color them icon"
+                  />
+                </li>
               </ul>
             </div>
           </nav>
@@ -318,29 +345,18 @@
     <main>
         <section id="about">
             <h2 class="title">About</h2>
-            <p>Welcome to my recordings page. I spent a lot of time learning audio production during the lockdown in 2020 and 2021, so a lot of these videos were made during that time.
-               These are some of the recordings that I was very proud of at the time I made them :) </p>
+            <p>For the past 15 years, the piano has been a big part of who I am. This page is where I share some of my favorite performances, from classical pieces of Chopin to more contemporary pieces. <br><br>
+              So, hey! Thanks for stopping by, and I hope you enjoy listening as much as I’ve enjoyed playing.
+            </p>
         </section>
 
         <h2 class="title">Recordings</h2>
         <section id="recordings" class="article-container">
             <div class= "video-embed" style="position:relative;padding-bottom:35%;height:0;overflow:hidden">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/WjGb8lWc7sM?si=309lkjoTjLeGbcM6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/aQVTS4qU6vQ?si=q7Rk0iQJ-gKCaIBd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
             <div style="position:relative;padding-bottom:35%;height:0;overflow:hidden">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/_iBc3FZzhx0?si=EFjR2OIZaCYlSxzp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            </div>
-            <div style="position:relative;padding-bottom:35%;height:0;overflow:hidden">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/puc7sqTt7E4?si=NYwPDFBMUZJRgIe2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            </div>
-            <div style="position:relative;padding-bottom:35%;height:0;overflow:hidden">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/PqdNFftehgQ?si=Ye1ujcMkuZKQUej0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            </div>
-            <div style="position:relative;padding-bottom:35%;height:0;overflow:hidden">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/aQVTS4qU6vQ?si=Bh6NNrQxnwRSDm5N" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            </div>
-            <div style="position:relative;padding-bottom:35%;height:0;overflow:hidden">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/UWD4y2rdXFc?si=YnagAdp2NNIx_nou" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/WjGb8lWc7sM?si=kF578KAuuyoviahl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
             <!-- Add more recordings as needed -->
         </section>

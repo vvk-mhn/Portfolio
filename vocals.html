@@ -4,24 +4,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Synchronoise Recordings</title>
+    <title>Music Recordings</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="mediaqueries.css" />
     <style>
         /* GENERAL */
 
+        /* Default Light Mode */
         :root {
-            --primary-color: black;
-            --primary-color-2: rgb(39, 39, 39);
-            --primary-color-3: rgb(74, 74, 74);
-            --background-color: rgb(33, 33, 33);
-            --secondary-color: white;
-            --secondary-color-2: rgb(170, 170, 170);
-            --button-background: rgb(202, 202, 202);
-            --button-text-hover: lightgrey;
-            --button-border: rgb(202, 202, 202) 0.1rem solid;
-            --button-border-2: rgb(0, 0, 0) 0.1rem solid;
-            --container-border: rgb(92, 92, 92);
+        --primary-color: white;
+        --primary-color-2: rgb(250, 250, 250);
+        --primary-color-3: rgb(181, 181, 181);
+        --background-color: rgb(255, 255, 255);
+        --secondary-color: black;
+        --secondary-color-2: rgb(85, 85, 85);
+        --button-background: rgb(53, 53, 53);
+        --button-text-hover: grey;
+        --button-border: rgb(53, 53, 53) 0.1rem solid;
+        --button-border-2: rgb(255, 255, 255) 0.1rem solid;
+        --container-border: rgb(163, 163, 163);
+        }
+
+        /* Dark Mode */
+        [theme="dark"] {
+        --primary-color: black;
+        --primary-color-2: rgb(39, 39, 39);
+        --primary-color-3: rgb(74, 74, 74);
+        --background-color: rgb(33, 33, 33);
+        --secondary-color: white;
+        --secondary-color-2: rgb(170, 170, 170);
+        --button-background: rgb(202, 202, 202);
+        --button-text-hover: lightgrey;
+        --button-border: rgb(202, 202, 202) 0.1rem solid;
+        --button-border-2: rgb(0, 0, 0) 0.1rem solid;
+        --container-border: rgb(92, 92, 92);
         }
 
         body {
@@ -310,6 +327,16 @@
                 <li><a href="#recordings" onclick="toggleMenu()">Recordings</a></li>
                 <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
                 <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+                <li>
+                    <img
+                      id="modeToggle2"
+                      class="icon color-icon"
+                      src="./assets/theme_light.png"
+                      src-light="./assets/theme_light.png"
+                      src-dark="./assets/theme_dark.png"
+                      alt="Color them icon"
+                    />
+                </li>
               </div>
             </div>
           </nav>
@@ -318,18 +345,24 @@
     <main>
         <section id="about">
             <h2 class="title">About</h2>
-            <p>I was part of Synchronoise, the A Capella Crew and The Music Society during the four years of my Undergraduate degree and became the Sub-Coordinator of Synchronoise in my third year. I made my best friends in these clubs
-                and made most of my cherished college memories with these people. These are some of the recordings of performances I featured in.
+            <p>I’ve always had a thing for vocal music. There’s just something about the way voices blend together that gives me chills every time. This page is where I share some of my own vocal arrangements, including a cappella versions of songs that I’ve had a lot of fun putting together. <br><br>
+                So, if you’re into harmonies, curious to hear some unique takes on familiar songs, or just looking for something different to listen to, you’re in the right place. Thanks for stopping by, and I hope these tracks bring you as much joy as they brought me while creating them. 
             </p>
         </section>
 
         <h2 class="title">Recordings</h2>
         <section id="recordings" class="article-container">
             <div class= "video-embed" style="position:relative;padding-bottom:35%;height:0;overflow:hidden">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/bPzn7h5-giM?si=M_rm6Ge9FqCEf6T4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/puc7sqTt7E4?si=NYwPDFBMUZJRgIe2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
             <div style="position:relative;padding-bottom:35%;height:0;overflow:hidden">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/A3RzFYC68DE?si=5Vpf0f0-z-_6dvCy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/_iBc3FZzhx0?si=EFjR2OIZaCYlSxzp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div style="position:relative;padding-bottom:35%;height:0;overflow:hidden">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/UWD4y2rdXFc?si=YnagAdp2NNIx_nou" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div style="position:relative;padding-bottom:35%;height:0;overflow:hidden">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/PqdNFftehgQ?si=Ye1ujcMkuZKQUej0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
             <!-- Add more recordings as needed -->
         </section>
